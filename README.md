@@ -15,3 +15,9 @@ Just use the Uuid trait and make sure you also set incrementing to false and key
         public $incrementing = false;
 
         public $keyType = 'string';
+        
+## Convert Country Codes from 2 to 3 digits and 3 to 2 digits
+
+    CountryCode::toThreeDigits('DE'); // DEU
+    
+    CountryCode::toTwoDigits('DEU'); // DE
