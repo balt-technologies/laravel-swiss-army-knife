@@ -6,10 +6,18 @@
             "email": "tobias.redmann@balt.de"
         }
     ],
-    "require": {},
+    "require": {
+        "league/iso3166": "^2.1"
+    },
     "autoload": {
         "psr-4": {
             "Balt\\": ["src/"]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.3"
         }
     },
     "require-dev": {
