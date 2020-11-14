@@ -21,3 +21,15 @@ Just use the Uuid trait and make sure you also set incrementing to false and key
     CountryCode::toThreeDigits('DE'); // DEU
     
     CountryCode::toTwoDigits('DEU'); // DE
+    
+## ArrayHelper
+
+### withoutNull
+
+Will create a new array without null values
+ 
+    $input = [ 'a' => 1, 'b' => null ];
+     
+    $output = ArrayHelper::withoutNull($input);
+    
+    // output is: [ 'a' => 1 ]
